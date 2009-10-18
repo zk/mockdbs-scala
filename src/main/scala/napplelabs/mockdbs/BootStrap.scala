@@ -14,8 +14,8 @@ object BootStrap extends Application {
 
         }
     } )
-    SwingUtilities.invokeLater( new Runnable() {
-        override def run = {
+//    SwingUtilities.invokeLater( new Runnable() {
+//        override def run = {
             val frame = new MacFrame("MockDBS")
 
             val toolbar = new UnifiedToolBar
@@ -40,8 +40,8 @@ object BootStrap extends Application {
             frame.setContent( canvasView.getComponent )
             frame.setVisible( true )
             canvasView.centerView
-        }
-    } )
+//        }
+//    } )
 
 
 }

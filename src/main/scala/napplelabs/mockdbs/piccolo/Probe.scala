@@ -34,7 +34,7 @@ class Probe extends PNode {
     }
 
 
-    ( -10 to 20 ).foreach {
+    ( -20 to 10 ).foreach {
         i =>
                 val t = new PText( -i + "mm" );
                 t.setFont( new Font( "Arial", Font.PLAIN, 16 ) );

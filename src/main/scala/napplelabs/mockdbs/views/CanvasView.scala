@@ -2,11 +2,11 @@ package napplelabs.mockdbs.views
 
 import java.awt.BorderLayout
 import edu.umd.cs.piccolo.{PLayer, PCanvas}
-import napplelabs.mockdbs.piccolo.{NapPZoomEventHandler, Probe}
 import edu.umd.cs.piccolo.util.PPaintContext
 import edu.umd.cs.piccolo.nodes.PPath
-import javax.swing.{JScrollBar, JPanel}
 import edu.umd.cs.piccolox.pswing.PSwing
+import javax.swing.{JSlider, JScrollBar, JPanel}
+import napplelabs.mockdbs.piccolo.{NeuronPath, NapPZoomEventHandler, Probe}
 
 /**
  * Created by IntelliJ IDEA.
@@ -22,13 +22,17 @@ class CanvasView() {
     def getComponent = component
 
     private val canvas = new PCanvas
+    def getCanvas = canvas
 
     component.setLayout( new BorderLayout )
 
     component.add( canvas, BorderLayout.CENTER )
 
     val backgroundLayer = new PLayer
+    val foregroundLayer = new PLayer
+
     canvas.getCamera.addLayer( 1, backgroundLayer )
+    //canvas.getCamera.addLayer( 2, foregroundLayer )
     canvas.setZoomEventHandler( new NapPZoomEventHandler )
     canvas.setAnimatingRenderQuality( PPaintContext.HIGH_QUALITY_RENDERING );
     canvas.setInteractingRenderQuality( PPaintContext.HIGH_QUALITY_RENDERING );
@@ -39,23 +43,23 @@ class CanvasView() {
 
     backgroundLayer.addChild( probe )
 
-    val scroll = new JScrollBar()
+    //def addNeuron(n:NeuronPath) = foregroundLayer.addChild(n)
+    //def removeNeuron(n:NeuronPath) = foregroundLayer.removeChild(n)
 
-    val swingNode = new PSwing(scroll)
-
-    backgroundLayer.addChild(swingNode)
+    def addNeuron(n:NeuronPath) = canvas.getLayer.addChild(n)
+    def removeNeuron(n:NeuronPath) = canvas.getLayer.removeChild(n)
 
     def centerView = {
-        canvas.getCamera.setViewOffset(component.getWidth/2, component.getHeight/2)
-        canvas.getCamera.setViewScale(1)
+        canvas.getCamera.setViewOffset( component.getWidth / 2, component.getHeight / 2 )
+        canvas.getCamera.setViewScale( 1 )
     }
 
     /**
      * Depth in mm
      */
     def setProbeDepth(depth:Double) = {
-        println("SETTING DEPTH: " + depth)
-        probe.setDepth(depth)
+        println( "SETTING DEPTH: " + depth )
+        probe.setDepth( depth )
         canvas.repaint()
     }
 }
