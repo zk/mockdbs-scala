@@ -1,17 +1,27 @@
+/*
+	MockDBS: Deep Brain Stimulation Simulator
+    Copyright (C) 2009 Zachary Kim
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
 package napplelabs.mockdbs.piccolo
 
 import edu.umd.cs.piccolo.PNode
 import java.awt.geom.Point2D
 import edu.umd.cs.piccolo.nodes.{PText, PPath}
 import java.awt.{Font, Color, BasicStroke}
-
-/**
- * Created by IntelliJ IDEA.
- * User: zkim
- * Date: Oct 17, 2009
- * Time: 6:52:09 PM
- * To change this template use File | Settings | File Templates.
- */
 
 class Probe extends PNode {
     val track = PPath.createLine( 0, -1000, 0, 2000 )
@@ -34,7 +44,7 @@ class Probe extends PNode {
     }
 
 
-    ( -20 to 10 ).foreach {
+    (-20 to 10).foreach {
         i =>
                 val t = new PText( -i + "mm" );
                 t.setFont( new Font( "Arial", Font.PLAIN, 16 ) );
@@ -42,14 +52,14 @@ class Probe extends PNode {
                 t.setTextPaint( Color.lightGray );
                 addChild( t );
 
-//                ( 1 until 5 ).foreach {
-//                    tick =>
-//                            val tm = new PText( "-" );
-//                            tm.setFont( new Font( "Arial", Font.PLAIN, 16 ) );
-//                            tm.setOffset( new Point2D.Double( 40, (i * 100) + (tick * 10) + 3 ) );
-//                            tm.setTextPaint( Color.lightGray );
-//                            addChild(tm)
-//                }
+        //                ( 1 until 5 ).foreach {
+        //                    tick =>
+        //                            val tm = new PText( "-" );
+        //                            tm.setFont( new Font( "Arial", Font.PLAIN, 16 ) );
+        //                            tm.setOffset( new Point2D.Double( 40, (i * 100) + (tick * 10) + 3 ) );
+        //                            tm.setTextPaint( Color.lightGray );
+        //                            addChild(tm)
+        //                }
     }
 
 }

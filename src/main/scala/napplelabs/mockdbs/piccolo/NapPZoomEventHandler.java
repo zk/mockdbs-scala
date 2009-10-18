@@ -41,22 +41,22 @@ import edu.umd.cs.piccolo.event.PZoomEventHandler;
  * to the right zooms with a speed proportional to the amount the mouse is moved
  * to the right of the anchor point. Similarly, if the mouse is moved to the
  * left, the the view is zoomed out.
- * <P>
+ * <p/>
  * On a Mac with its single mouse button one may wish to change the standard
  * right mouse button zooming behavior. This can be easily done with the
  * PInputEventFilter. For example to zoom with button one and shift you would do
  * this:
- * <P>
+ * <p/>
  * <code>
  * <pre>
  * zoomEventHandler.getEventFilter().setAndMask(InputEvent.BUTTON1_MASK |
  *                                              InputEvent.SHIFT_MASK);
  * </pre>
  * </code>
- * <P>
+ * <p/>
  *
- * @version 1.0
  * @author Jesse Grosjean
+ * @version 1.0
  */
 public class NapPZoomEventHandler extends PZoomEventHandler {
 
@@ -129,30 +129,30 @@ public class NapPZoomEventHandler extends PZoomEventHandler {
     public void processEvent(final PInputEvent evt, final int i) {
 
 
-		if (evt.isMouseWheelEvent() && evt.getCamera().getViewScale() > 0.000001 && evt.getCamera().getViewScale() < (Double.MAX_VALUE/2)) {
+        if (evt.isMouseWheelEvent() && evt.getCamera().getViewScale() > 0.000001 && evt.getCamera().getViewScale() < (Double.MAX_VALUE / 2)) {
 
-			Point2D viewZoomPoint = evt.getPosition();
+            Point2D viewZoomPoint = evt.getPosition();
 
-			PCamera camera = evt.getCamera();
-			double dx = - evt.getWheelRotation();
+            PCamera camera = evt.getCamera();
+            double dx = -evt.getWheelRotation();
 
-	        double scaleDelta = (1.0 + (0.05 * dx));
+            double scaleDelta = (1.0 + (0.05 * dx));
 
-	        double currentScale = camera.getViewScale();
-	        double newScale = currentScale * scaleDelta;
+            double currentScale = camera.getViewScale();
+            double newScale = currentScale * scaleDelta;
 
-	        if (newScale < minScale) {
-	            scaleDelta = minScale / currentScale;
-	        }
-	        if ((maxScale > 0) && (newScale > maxScale)) {
-	            scaleDelta = maxScale / currentScale;
-	        }
+            if (newScale < minScale) {
+                scaleDelta = minScale / currentScale;
+            }
+            if ((maxScale > 0) && (newScale > maxScale)) {
+                scaleDelta = maxScale / currentScale;
+            }
 
             //System.out.println(camera.getViewScale());
-	        camera.scaleViewAboutPoint(scaleDelta, viewZoomPoint.getX(), viewZoomPoint.getY());
+            camera.scaleViewAboutPoint(scaleDelta, viewZoomPoint.getX(), viewZoomPoint.getY());
 
-		}
-	}
+        }
+    }
 
     // ****************************************************************
     // Debugging - methods for debugging

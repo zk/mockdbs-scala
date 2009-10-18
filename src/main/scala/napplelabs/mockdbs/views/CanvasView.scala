@@ -1,3 +1,21 @@
+/*
+	MockDBS: Deep Brain Stimulation Simulator
+    Copyright (C) 2009 Zachary Kim
+
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation; either version 2 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License along
+    with this program; if not, write to the Free Software Foundation, Inc.,
+    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
 package napplelabs.mockdbs.views
 
 import java.awt.BorderLayout
@@ -8,13 +26,6 @@ import edu.umd.cs.piccolox.pswing.PSwing
 import javax.swing.{JSlider, JScrollBar, JPanel}
 import napplelabs.mockdbs.piccolo.{NeuronPath, NapPZoomEventHandler, Probe}
 
-/**
- * Created by IntelliJ IDEA.
- * User: zkim
- * Date: Oct 17, 2009
- * Time: 6:38:23 PM
- * To change this template use File | Settings | File Templates.
- */
 
 class CanvasView() {
     private val component = new JPanel
@@ -22,6 +33,7 @@ class CanvasView() {
     def getComponent = component
 
     private val canvas = new PCanvas
+
     def getCanvas = canvas
 
     component.setLayout( new BorderLayout )
@@ -46,8 +58,9 @@ class CanvasView() {
     //def addNeuron(n:NeuronPath) = foregroundLayer.addChild(n)
     //def removeNeuron(n:NeuronPath) = foregroundLayer.removeChild(n)
 
-    def addNeuron(n:NeuronPath) = canvas.getLayer.addChild(n)
-    def removeNeuron(n:NeuronPath) = canvas.getLayer.removeChild(n)
+    def addNeuron(n:NeuronPath) = canvas.getLayer.addChild( n )
+
+    def removeNeuron(n:NeuronPath) = canvas.getLayer.removeChild( n )
 
     def centerView = {
         canvas.getCamera.setViewOffset( component.getWidth / 2, component.getHeight / 2 )
