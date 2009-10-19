@@ -24,7 +24,8 @@ import edu.umd.cs.piccolo.util.PPaintContext
 import edu.umd.cs.piccolo.nodes.PPath
 import edu.umd.cs.piccolox.pswing.PSwing
 import javax.swing.{JSlider, JScrollBar, JPanel}
-import napplelabs.mockdbs.piccolo.{NeuronPath, NapPZoomEventHandler, Probe}
+import napplelabs.mockdbs.piccolo.{NeuronPath, NapPZoomEventHandler, Probe, BirdsEyeView}
+
 
 
 class CanvasView() {
@@ -54,6 +55,8 @@ class CanvasView() {
     probe.rotate( Math.Pi / 360 * 45 );
 
     backgroundLayer.addChild( probe )
+    
+    val birdsEyeView = new BirdsEyeView() 
 
     //def addNeuron(n:NeuronPath) = foregroundLayer.addChild(n)
     //def removeNeuron(n:NeuronPath) = foregroundLayer.removeChild(n)

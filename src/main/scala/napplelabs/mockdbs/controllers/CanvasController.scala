@@ -23,12 +23,18 @@ import napplelabs.mockdbs.models.DepthModel
 import napplelabs.mockdbs.piccolo.NeuronPath
 import java.awt.Color
 import edu.umd.cs.piccolo.event.{PInputEvent, PDragSequenceEventHandler}
-import edu.umd.cs.piccolo.PNode
+import edu.umd.cs.piccolo.{PNode, PLayer}
 
 class CanvasController(canvasView:CanvasView, topBarView:TopBarView, depthModel:DepthModel) {
     topBarView.onResetViewButton( e => canvasView.centerView )
     depthModel.depthObs.addObserver( depth => canvasView.setProbeDepth( depth ) )
     canvasView.addNeuron( new NeuronPath( Color.GRAY ) )
+    
+    canvasView.birdsEyeView.connect(canvasView.getCanvas,
+				Array[PLayer](canvasView.getCanvas.getLayer(), canvasView.backgroundLayer))
+    
+    canvasView.birdsEyeView.getCamera().setOffset(10, 10);
+    canvasView.getCanvas.getCamera().addChild(canvasView.birdsEyeView.getCamera());
 
     canvasView.getCanvas.addInputEventListener( new PDragSequenceEventHandler() {
         override def drag(e:PInputEvent) = {

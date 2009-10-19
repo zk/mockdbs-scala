@@ -39,6 +39,13 @@ class TopBarView(toolBar:UnifiedToolBar) {
     resetViewButton.setFocusable( false )
     resetViewButton.putClientProperty( "JButton.buttonType", "textured" )
     toolBar.addComponentToRight( resetViewButton )
+    
+    
+//    val birdsEyeButton = new JToggleButton("Toggle Bird's Eye")
+//    birdsEyeButton.setFocusable(false)
+//    birdsEyeButton.putClientProperty( "JButton.buttonType", "textured")
+//    toolBar.addComponentToLeft( birdsEyeButton )
+    
 
     def onMuteButtonToggle(f:(Boolean) => Any) = {
         muteButton.addActionListener( (e:ActionEvent) => f( muteButton.isSelected ) )
