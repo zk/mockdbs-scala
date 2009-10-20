@@ -22,9 +22,10 @@ package napplelabs.mockdbs
 import com.explodingpixels.macwidgets.{UnifiedToolBar}
 import com.google.inject.{Guice, AbstractModule}
 import controllers.{CanvasController, GlobalKeyController, NoiseController, DepthController}
-import javax.swing.SwingUtilities
 import models.{NoiseGenerator, NoiseVolumeModel, DepthModel}
-import views.{CanvasView, TopBarView, BottomBarView, MacFrame}
+import views._
+import javax.swing.border.Border
+import javax.swing.{BorderFactory, JSplitPane, SwingUtilities}
 
 object BootStrap extends Application {
     val i = Guice.createInjector( new AbstractModule() {
@@ -47,15 +48,22 @@ object BootStrap extends Application {
     val bottomBarView = new BottomBarView
     val topBarView = new TopBarView( toolbar )
     val canvasView = new CanvasView
+    val sourceListView = new SourceListView
 
     val depthController = new DepthController( depthModel, bottomBarView )
     val noiseController = new NoiseController( bottomBarView, topBarView, noiseVolumeModel )
     val globalKeyController = new GlobalKeyController( noiseVolumeModel, depthModel )
     val canvasController = new CanvasController( canvasView, topBarView, depthModel )
 
+    val content = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, sourceListView.getComponent, canvasView.getComponent )
+    content.setContinuousLayout(true)
+    content.setDividerSize(1)
+    content.setBorder(BorderFactory.createEmptyBorder)
+    sourceListView.controlBar.installDraggableWidgetOnSplitPane(content);
+
     frame.setTopBar( toolbar )
     frame.setBottomBar( bottomBarView.bottomBar )
-    frame.setContent( canvasView.getComponent )
+    frame.setContent( content )
     frame.setVisible( true )
     canvasView.centerView
     //        }

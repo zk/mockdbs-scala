@@ -65,13 +65,22 @@ class CanvasView() {
     depthSlider.setMinimum( -1000 )
     component.add( depthSlider, BorderLayout.EAST )
 
+    private var neurons = List[NeuronPath]()
+
+    def getNeurons = neurons
 
     //def addNeuron(n:NeuronPath) = foregroundLayer.addChild(n)
     //def removeNeuron(n:NeuronPath) = foregroundLayer.removeChild(n)
 
-    def addNeuron(n:NeuronPath) = canvas.getLayer.addChild( n )
+    def addNeuron(n:NeuronPath) = {
+        canvas.getLayer.addChild( n )
+        neurons = n :: neurons
+    }
 
-    def removeNeuron(n:NeuronPath) = canvas.getLayer.removeChild( n )
+    def removeNeuron(n:NeuronPath) = {
+        canvas.getLayer.removeChild( n )
+        neurons = neurons - n
+    }
 
     def centerView = {
         canvas.getCamera.setViewOffset( component.getWidth / 2, component.getHeight / 2 )

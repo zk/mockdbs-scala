@@ -82,7 +82,16 @@
       <file leaf-file-name="CanvasView.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="96" column="29" selection-start="3227" selection-end="3227" vertical-scroll-proportion="0.0">
+            <state line="69" column="19" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SourceListView.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/SourceListView.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="6" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.35714287">
               <folding />
             </state>
           </provider>
@@ -91,43 +100,16 @@
       <file leaf-file-name="TopBarView.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="94" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.0">
+            <state line="26" column="6" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BirdsEyeView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/BirdsEyeView.java">
+      <file leaf-file-name="BootStrap.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/BootStrap.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="67" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Probe.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="51" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CanvasController.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="40" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.68490154">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DepthModel.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/DepthModel.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="6" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
+            <state line="61" column="19" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -143,22 +125,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/NoiseController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/NoiseGenerator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/NoiseVolumeModel.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/NapPZoomEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/NeuronPath.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/processing/PAppletWrapper.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/BottomBarView.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/BootStrap.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/MacFrame.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/Observable.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/implicits/SwingImplicits.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/BirdsEyeView.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/BootStrap.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/SourceListView.scala" />
       </list>
     </option>
   </component>
@@ -747,20 +729,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1436" height="878" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.111031" sideWeight="0.64285713" order="7" side_tool="false" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.111031" sideWeight="0.64285713" order="7" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18601298" sideWeight="0.64285713" order="0" side_tool="false" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2767857" sideWeight="0.5" order="1" side_tool="false" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20187455" sideWeight="0.76403064" order="0" side_tool="false" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20187455" sideWeight="0.64285713" order="0" side_tool="false" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32270408" sideWeight="0.5" order="10" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3482143" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3482143" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923468" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39913544" sideWeight="0.76403064" order="1" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" />
@@ -847,11 +829,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/NoiseGenerator.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.12698413" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/NoiseVolumeModel.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="3" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0" />
@@ -882,28 +859,9 @@
         <state line="17" column="3" selection-start="809" selection-end="809" vertical-scroll-proportion="0.4047619" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/BootStrap.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="7" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/implicits/SwingImplicits.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="36" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/DepthModel.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="6" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="51" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/explodingpixels/macwidgets/0.9.5/macwidgets-0.9.5.jar!/com/explodingpixels/macwidgets/MacButtonFactory.class">
@@ -913,9 +871,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="94" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.0">
+        <state line="26" column="48" selection-start="1074" selection-end="1074" vertical-scroll-proportion="0.36651585">
           <folding />
         </state>
       </provider>
@@ -927,16 +885,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="29" selection-start="3227" selection-end="3227" vertical-scroll-proportion="0.0">
+        <state line="54" column="55" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/DepthModel.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="40" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.68490154">
+        <state line="23" column="6" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="19" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="6" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/BootStrap.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="19" selection-start="2530" selection-end="2530" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/SourceListView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="6" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.35714287">
           <folding />
         </state>
       </provider>

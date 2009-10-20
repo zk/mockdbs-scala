@@ -24,7 +24,7 @@ import edu.umd.cs.piccolo.nodes.{PText, PPath}
 import java.awt.{Font, Color, BasicStroke}
 
 class Probe extends PNode {
-    val track = PPath.createLine( 0, -1000, 0, 2000 )
+    val track = PPath.createLine( 0, -2000, 0, 1000 )
     track.setStroke( new BasicStroke( 3 ) );
     track.setPaint( Color.lightGray );
     track.setStrokePaint( Color.lightGray );
