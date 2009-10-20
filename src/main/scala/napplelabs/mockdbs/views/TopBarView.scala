@@ -39,13 +39,31 @@ class TopBarView(toolBar:UnifiedToolBar) {
     resetViewButton.setFocusable( false )
     resetViewButton.putClientProperty( "JButton.buttonType", "textured" )
     toolBar.addComponentToRight( resetViewButton )
-    
-    
-//    val birdsEyeButton = new JToggleButton("Toggle Bird's Eye")
-//    birdsEyeButton.setFocusable(false)
-//    birdsEyeButton.putClientProperty( "JButton.buttonType", "textured")
-//    toolBar.addComponentToLeft( birdsEyeButton )
-    
+
+    val lockedIcon = new ImageIcon( classOf[TopBarView].getResource( "/locked.png" ) )
+    val unlockedIcon = new ImageIcon( classOf[TopBarView].getResource( "/unlocked.png" ) )
+    val toggleViewLockButton = MacButtonFactory.makeUnifiedToolBarButton( new JToggleButton( "View Lock", lockedIcon ) )
+    toggleViewLockButton.addActionListener( new ActionListener() {
+        def actionPerformed(e:ActionEvent) = {
+            toggleViewLockButton.isSelected match {
+                case true => toggleViewLockButton.setIcon( unlockedIcon )
+                case false => toggleViewLockButton.setIcon( lockedIcon )
+            }
+        }
+    } )
+    //val toggleViewLockButton = new JToggleButton( "Toggle View Lock", lockedIcon )
+    toggleViewLockButton.setFocusable( false )
+    toggleViewLockButton.putClientProperty( "JButton.buttonType", "textured" )
+    toggleViewLockButton.setSelectedIcon( unlockedIcon )
+    toolBar.addComponentToRight( toggleViewLockButton )
+
+
+
+    //    val birdsEyeButton = new JToggleButton("Toggle Bird's Eye")
+    //    birdsEyeButton.setFocusable(false)
+    //    birdsEyeButton.putClientProperty( "JButton.buttonType", "textured")
+    //    toolBar.addComponentToLeft( birdsEyeButton )
+
 
     def onMuteButtonToggle(f:(Boolean) => Any) = {
         muteButton.addActionListener( (e:ActionEvent) => f( muteButton.isSelected ) )
@@ -56,4 +74,6 @@ class TopBarView(toolBar:UnifiedToolBar) {
     }
 
     def setMuteButtonSelected(b:Boolean) = muteButton.setSelected( b )
+
+    def onLockViewToggle(f:(Boolean) => Any) = toggleViewLockButton.addActionListener( (e:ActionEvent) => f( !toggleViewLockButton.isSelected ) )
 }

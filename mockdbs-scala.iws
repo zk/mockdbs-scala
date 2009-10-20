@@ -16,8 +16,8 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="cfeef1e9-8ac4-4d49-afcf-147b9df74865" name="Default" comment="" />
-    <ignored path="mockdbs-scala.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="mockdbs-scala.iws" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +78,62 @@
   </component>
   <component name="FileColors" enabled="false" enabledForTabs="false" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="CanvasView.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="96" column="29" selection-start="3227" selection-end="3227" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopBarView.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="94" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BirdsEyeView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/BirdsEyeView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="77" column="67" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Probe.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="45" column="51" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CanvasController.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="67" column="40" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.68490154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DepthModel.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/DepthModel.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="6" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -88,22 +143,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/GlobalKeyController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/NoiseController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/NoiseGenerator.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/NoiseVolumeModel.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/NapPZoomEventHandler.java" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/NeuronPath.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/processing/PAppletWrapper.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/BottomBarView.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/BootStrap.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/MacFrame.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/Observable.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/implicits/SwingImplicits.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/BirdsEyeView.java" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala" />
       </list>
     </option>
   </component>
@@ -168,8 +223,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -201,8 +254,22 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -237,6 +304,100 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mockdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="piccolo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs-scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mockdbs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,10 +425,14 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.searchVisible" value="true" />
@@ -278,7 +443,8 @@
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="RunManagerConfig.showSettingsBeforeRunnig" value="true" />
   </component>
@@ -349,14 +515,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" />
       <extension name="snapshooter" />
@@ -387,6 +545,14 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -464,6 +630,11 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="mockdbs-scala" />
       <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64913" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
       <RunnerSettings RunnerId="JavaRebel">
         <option name="enableRebel" value="false" />
         <option name="enableLoggign" value="false" />
@@ -473,6 +644,7 @@
         <option name="enableLoggign" value="false" />
       </RunnerSettings>
       <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" enabled="true" />
@@ -548,9 +720,6 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="57915388-9f0e-45b0-9201-c2d2484d4772" name="Default" comment="" />
-      <changelist id="bc3b1dbb-a38b-4cfc-99fe-9d5b3a5a738a" name="Default" comment="" />
-      <changelist id="926e528b-828e-46d3-9757-7fdd752479da" name="Default" comment="" />
       <changelist id="cfeef1e9-8ac4-4d49-afcf-147b9df74865" name="Default" comment="" />
       <created>1255650993379</created>
       <updated>1255650993379</updated>
@@ -577,21 +746,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1436" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="4" y="22" width="1436" height="878" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.111031" sideWeight="0.64285713" order="7" side_tool="false" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23936553" sideWeight="0.6683673" order="0" side_tool="false" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18601298" sideWeight="0.64285713" order="0" side_tool="false" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2767857" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20187455" sideWeight="0.76403064" order="0" side_tool="false" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32270408" sideWeight="0.5" order="10" side_tool="false" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32270408" sideWeight="0.5" order="10" side_tool="false" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3490099" sideWeight="0.5" order="2" side_tool="false" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3482143" sideWeight="0.5" order="2" side_tool="false" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923468" sideWeight="0.5" order="3" side_tool="false" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39913544" sideWeight="0.76403064" order="1" side_tool="false" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" />
@@ -601,7 +771,6 @@
       <window_info id="JavaRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" />
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45408162" sideWeight="0.5" order="1" side_tool="false" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39923468" sideWeight="0.5" order="5" side_tool="false" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" />
@@ -678,21 +847,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/GlobalKeyController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/NoiseController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1118" selection-end="1118" vertical-scroll-proportion="0.42857143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/DepthModel.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="3" selection-start="809" selection-end="809" vertical-scroll-proportion="0.4294737" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/NoiseGenerator.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="943" selection-end="943" vertical-scroll-proportion="0.12698413" />
@@ -713,24 +867,9 @@
         <state line="23" column="0" selection-start="938" selection-end="938" vertical-scroll-proportion="0.0952381" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="1004" selection-end="1004" vertical-scroll-proportion="0.12698413" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="1033" selection-end="1033" vertical-scroll-proportion="0.5714286" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/MacFrame.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="7" selection-start="3348" selection-end="3348" vertical-scroll-proportion="1.6428572" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="3" selection-start="809" selection-end="809" vertical-scroll-proportion="0.4047619" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/BottomBarView.scala">
@@ -745,21 +884,59 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/BootStrap.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="7" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="7" selection-start="1202" selection-end="1202" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/implicits/SwingImplicits.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="36" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0">
+        <state line="18" column="36" selection-start="846" selection-end="846" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/models/DepthModel.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="6" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/Probe.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="51" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/explodingpixels/macwidgets/0.9.5/macwidgets-0.9.5.jar!/com/explodingpixels/macwidgets/MacButtonFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="69" selection-start="750" selection-end="774" vertical-scroll-proportion="0.3325792">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/TopBarView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="94" selection-start="2137" selection-end="2137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/piccolo/BirdsEyeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="67" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/views/CanvasView.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="29" selection-start="3227" selection-end="3227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/napplelabs/mockdbs/controllers/CanvasController.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="3" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+        <state line="67" column="40" selection-start="2718" selection-end="2718" vertical-scroll-proportion="0.68490154">
           <folding />
         </state>
       </provider>

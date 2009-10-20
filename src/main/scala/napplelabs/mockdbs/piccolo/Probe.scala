@@ -40,8 +40,10 @@ class Probe extends PNode {
      * in mm
      */
     def setDepth(depth:Double) = {
-        probe.setOffset( 0, -depth * 100 )
+        probe.setOffset(new Point2D.Double(0, -depth * 100) )
     }
+
+    def getTipPosition = probe.getGlobalTranslation
 
 
     (-20 to 10).foreach {

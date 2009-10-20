@@ -29,12 +29,12 @@ class CanvasController(canvasView:CanvasView, topBarView:TopBarView, depthModel:
     topBarView.onResetViewButton( e => canvasView.centerView )
     depthModel.depthObs.addObserver( depth => canvasView.setProbeDepth( depth ) )
     canvasView.addNeuron( new NeuronPath( Color.GRAY ) )
-    
-    canvasView.birdsEyeView.connect(canvasView.getCanvas,
-				Array[PLayer](canvasView.getCanvas.getLayer(), canvasView.backgroundLayer))
-    
-    canvasView.birdsEyeView.getCamera().setOffset(10, 10);
-    canvasView.getCanvas.getCamera().addChild(canvasView.birdsEyeView.getCamera());
+
+    canvasView.birdsEyeView.connect( canvasView.getCanvas,
+        Array[PLayer]( canvasView.getCanvas.getLayer(), canvasView.backgroundLayer ) )
+
+    canvasView.birdsEyeView.getCamera().setOffset( 10, 10 );
+    canvasView.getCanvas.getCamera().addChild( canvasView.birdsEyeView.getCamera() );
 
     canvasView.getCanvas.addInputEventListener( new PDragSequenceEventHandler() {
         override def drag(e:PInputEvent) = {
@@ -55,6 +55,17 @@ class CanvasController(canvasView:CanvasView, topBarView:TopBarView, depthModel:
                 e.setHandled( true )
             }
 
+        }
+    } )
+
+    canvasView.onDepthSliderChange( depth => {
+        depthModel.depthObs.value = depth.asInstanceOf[Double] / 100
+    } )
+
+    topBarView.onLockViewToggle( b => {
+        canvasView.setCameraLockedToProbe( b );
+        if(b) {
+            canvasView.centerViewOnProbe
         }
     } )
 }

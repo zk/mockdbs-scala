@@ -18,18 +18,20 @@
  */
 package napplelabs.mockdbs.views
 
-import java.awt.BorderLayout
 import edu.umd.cs.piccolo.{PLayer, PCanvas}
 import edu.umd.cs.piccolo.util.PPaintContext
 import edu.umd.cs.piccolo.nodes.PPath
 import edu.umd.cs.piccolox.pswing.PSwing
-import javax.swing.{JSlider, JScrollBar, JPanel}
 import napplelabs.mockdbs.piccolo.{NeuronPath, NapPZoomEventHandler, Probe, BirdsEyeView}
-
-
+import javax.swing.{SwingConstants, JSlider, JScrollBar, JPanel}
+import java.awt.{Color, BorderLayout}
+import java.awt.event.ActionEvent
+import javax.swing.event.{ChangeEvent, ChangeListener}
+import java.awt.geom.Rectangle2D
 
 class CanvasView() {
     private val component = new JPanel
+    component.setBackground( Color.WHITE )
 
     def getComponent = component
 
@@ -55,8 +57,14 @@ class CanvasView() {
     probe.rotate( Math.Pi / 360 * 45 );
 
     backgroundLayer.addChild( probe )
-    
-    val birdsEyeView = new BirdsEyeView() 
+
+    val birdsEyeView = new BirdsEyeView()
+
+    val depthSlider = new JSlider( SwingConstants.VERTICAL )
+    depthSlider.setMaximum( 2000 )
+    depthSlider.setMinimum( -1000 )
+    component.add( depthSlider, BorderLayout.EAST )
+
 
     //def addNeuron(n:NeuronPath) = foregroundLayer.addChild(n)
     //def removeNeuron(n:NeuronPath) = foregroundLayer.removeChild(n)
@@ -70,12 +78,41 @@ class CanvasView() {
         canvas.getCamera.setViewScale( 1 )
     }
 
+    def onDepthSliderChange(f:Double => Any) = {
+        depthSlider.addChangeListener( new ChangeListener() {
+            def stateChanged(e:ChangeEvent) = {
+                f( depthSlider.getValue )
+            }
+        } )
+    }
+
     /**
      * Depth in mm
      */
     def setProbeDepth(depth:Double) = {
-        println( "SETTING DEPTH: " + depth )
         probe.setDepth( depth )
         canvas.repaint()
+
+        if (cameraLockedToProbe) {
+            centerViewOnProbe
+        }
     }
+
+    def centerViewOnProbe = {
+        val rect = canvas.getCamera().getViewBounds();
+
+        val w = rect.getWidth()
+        val h = rect.getHeight()
+
+        val p_x = probe.getTipPosition.getX()
+        val p_y = probe.getTipPosition.getY()
+
+        val new_r = new Rectangle2D.Double( p_x - w / 2, p_y - h / 2, w, h )
+
+        canvas.getCamera.setViewBounds( new_r )
+    }
+
+    var cameraLockedToProbe = true
+
+    def setCameraLockedToProbe(b:Boolean) = cameraLockedToProbe = b
 }

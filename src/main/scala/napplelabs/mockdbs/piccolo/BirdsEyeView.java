@@ -74,6 +74,11 @@ import edu.umd.cs.piccolox.nodes.P3DRect;
             
             setBounds(0, 0, 200, 300);
 
+            PPath areaVisibleBorder = PPath.createRectangle(0, 0, 200, 300);
+            areaVisibleBorder.setPaint(new Color(255, 255, 255, 100));
+            areaVisibleBorder.setStrokePaint(Color.lightGray);
+            getCamera().addChild(areaVisibleBorder);
+
             // create the coverage node
             areaVisiblePNode = PPath.createRectangle(0, 0, 100, 100);
             areaVisiblePNode.setPaint(new Color(128, 128, 255));
@@ -81,10 +86,7 @@ import edu.umd.cs.piccolox.nodes.P3DRect;
             areaVisiblePNode.setBounds(0, 0, 100, 100);
             getCamera().addChild(areaVisiblePNode);
             
-            PPath areaVisibleBorder = PPath.createRectangle(0, 0, 200, 300);
-            areaVisibleBorder.setPaint(new Color(0, 0, 0, 0));
-            areaVisibleBorder.setStrokePaint(Color.lightGray);
-            getCamera().addChild(areaVisibleBorder);
+
 
             // add the drag event handler
             getCamera().addInputEventListener(new PDragSequenceEventHandler() {
@@ -115,9 +117,16 @@ import edu.umd.cs.piccolox.nodes.P3DRect;
 
             viewedCanvas.getCamera().addPropertyChangeListener(changeListener);
 
+            PLayer pLayer = getCamera().getLayer(getCamera().getLayerCount() - 1);
+
+            getCamera().removeLayer(pLayer);
+            int lastLayer = 0;
             for (layerCount = 0; layerCount < viewed_layers.length; ++layerCount) {
                 getCamera().addLayer(layerCount, viewed_layers[layerCount]);
+                lastLayer = layerCount;
             }
+
+            getCamera().addLayer(layerCount, pLayer);
 
         }
 
