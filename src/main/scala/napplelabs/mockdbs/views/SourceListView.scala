@@ -4,14 +4,6 @@ import com.explodingpixels.macwidgets._
 import com.explodingpixels.widgets.PopupMenuCustomizerUsingStrings
 import javax.swing.{ImageIcon, JPanel}
 
-/**
- * Created by IntelliJ IDEA.
- * User: zkim
- * Date: Oct 19, 2009
- * Time: 11:38:42 PM
- * To change this template use File | Settings | File Templates.
- */
-
 class SourceListView {
     val basicNeuronsCat = new SourceListCategory( "Basic Neurons" )
 
